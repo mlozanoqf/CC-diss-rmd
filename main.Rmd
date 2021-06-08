@@ -1,0 +1,150 @@
+---
+title: " "
+output:
+  pdf_document:
+    number_sections: TRUE
+geometry: "left = 2.5cm, right = 2cm, top = 2cm, bottom = 2cm"
+fontsize: 11pt
+header-includes:
+  - \usepackage{float}
+  - \usepackage{sectsty}
+  - \usepackage{paralist}
+  - \usepackage{setspace}\spacing{1.5}
+  - \usepackage{fancyhdr}
+  - \usepackage{lastpage}
+  - \usepackage{dcolumn}
+  - \usepackage{natbib}\bibliographystyle{agsm}
+  - \usepackage[nottoc, numbib]{tocbibind}
+bibliography: bibliography.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+options(tinytex.verbose = TRUE)
+```
+
+\allsectionsfont{\centering}
+\subsectionfont{\raggedright}
+\subsubsectionfont{\raggedright}
+
+\pagenumbering{gobble}
+
+\begin{centering}
+
+\vspace{3cm}
+
+```{r uni_logo, echo=F, out.width="20%"}
+knitr::include_graphics("img/escudoudem.jpg")
+```
+
+\vspace{1cm}
+
+\Large
+{\bf Universidad de Monterrey}
+
+\Large
+{\bf Escuela de Negocios}
+
+\vspace{1cm}
+
+\Large
+
+\doublespacing
+{\bf TÍTULO DEL PROYECTO DE EVALUACIÓN FINAL PEF, \\SEGUNDO RENGLÓN PARA UN POSIBLE SUB-TÍTULO}
+
+\vspace{1 cm}
+
+\normalsize
+\singlespacing
+Autores (español), By (inglés)
+
+\vspace{0.5 cm}
+
+\Large
+
+{\bf NOMBRE DE ALUMNO 1\\NOMBRE DE ALUMNO 2\\NOMBRE DE ALUMNO 3\\NOMBRE DE ALUMNO 4}
+
+\vspace{1.5 cm}
+
+Programas académicos \\
+Licenciatura en Finanzas Internacionales \\
+Licenciatura en Economía
+
+\vspace{1.5 cm}
+
+\normalsize
+Diciembre 2021
+
+\end{centering}
+
+\newpage
+
+\pagenumbering{gobble}
+
+\begin{centering}
+
+{\bf Abstract}
+
+\end{centering}
+
+\spacing{1.5}
+
+(the spacing is set to 1.5)
+
+no more than 250 words for the abstract
+
+- a description of the research question/knowledge gap – what we know and what we don’t know
+- how your research has attempted to fill this gap
+- a brief description of the methods
+- brief results
+- key conclusions that put the research into a larger context
+
+\pagenumbering{roman}
+
+\newpage
+
+\centering
+\raggedright
+\newpage
+\tableofcontents
+
+\newpage
+
+```{r acknowledgments, child='acknowledgments.Rmd'}
+```
+
+\newpage
+
+```{r intro, child = 'introduction.Rmd'}
+```
+\pagenumbering{arabic}
+
+\newpage
+
+```{r methods, child = 'methods.Rmd'}
+```
+
+\newpage
+
+```{r results, child = 'results.Rmd'}
+```
+
+\newpage
+
+```{r discussion, child = 'discussion.Rmd'}
+```
+
+\newpage
+
+```{r conclusion, child = 'conclusion.Rmd'}
+```
+
+\newpage
+
+```{r biblio, child = 'bibliography.Rmd'}
+```
+
+\newpage
+
+```{r appendix, child = 'appendix.Rmd'}
+```

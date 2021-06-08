@@ -12,6 +12,25 @@ header-includes:
 - set the context for the dissertation by reviewing the relevant literature.
 - include relevant references to general (theoretical papers and reviews) and specific (specific to the particular question addressed) literature, to justify the research that has been undertaken and define the questions being addressed.
 - state the primary research questions and hypotheses in the final paragraph.
-- follow an ‘inverted triangle’ format, progressing from general scientific ideas and why they matter to the specific research questions addressed in the dissertation project. 
+- follow an innverted triangle? format, progressing from general scientific ideas and why they matter to the specific research questions addressed in the dissertation project. 
 
-*The introduction should not be just a ‘Literature Review’.*
+*The introduction should not be just a Literature Review?*
+
+\citep{cochrane2009asset}
+
+\citep*{Hull}
+
+\citet{carhart1997persistence}
+
+\citet*{cochrane1996cross}
+
+\citep{cochrane1996cross, carhart1997persistence}
+
+\citeauthor{carhart1997persistence}
+
+\citeauthor*{carhart1997persistence}
+
+\citeyear{carhart1997persistence}
+
+\citeyearpar{carhart1997persistence}
+
